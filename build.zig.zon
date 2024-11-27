@@ -1,0 +1,25 @@
+.{
+    .name = "zig-rocksdb-playground",
+    .version = "0.0.0",
+    .dependencies = .{
+        .rocksdb = .{
+            .url = "https://github.com/facebook/rocksdb/archive/v9.7.4.tar.gz",
+            .hash = "1220af064eaae20142058adc238bb7d033328e069e66f1d4963654b5fc60e1adea48",
+        },
+        .linux_liburing = .{
+            .url = "https://github.com/axboe/liburing/archive/liburing-2.8.tar.gz",
+            .hash = "12202dc32262c855ad72791cf636c5cc9812a8bafc83beff7ef6cc127c05b73afefd",
+        },
+        .temp = .{
+            .url = "https://github.com/abhinav/temp.zig/archive/0.3.0.tar.gz",
+            .hash = "122095027cb551451a12706f958487bacc9bec1dfcd8c6bdacff890fb8d641755a58",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "thirdparty",
+        "LICENSE",
+    },
+}
